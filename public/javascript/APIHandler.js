@@ -1,7 +1,7 @@
 class APIHandler {
     constructor(baseUrl) {
         this.api = axios.create({
-            baseUrl: 'baseUrl'
+            baseUrl: baseUrl
         });
     }
     // list all characters from the API
@@ -26,7 +26,6 @@ class APIHandler {
     } 
 }
 
-module.exports = ApiService;
 
 /*
 Get all the characters info from http://localhost:8000/characters
@@ -39,4 +38,4 @@ Edit a single character through his id in http://localhost:8000/characters/:id
 //to get one character -> get
 //to create one character -> post 
 //to delete a character -> delete 
-//to edit a character id -> put
+//to edit a character id -> put */
